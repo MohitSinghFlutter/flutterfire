@@ -1,3 +1,5 @@
+// @dart = 2.9
+
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
@@ -11,7 +13,7 @@ import './test_utils.dart';
 
 void runReferenceTests() {
   group('$Reference', () {
-    FirebaseStorage storage;
+    /*late*/ FirebaseStorage storage;
 
     setUpAll(() async {
       storage = FirebaseStorage.instance;
